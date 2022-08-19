@@ -1,13 +1,14 @@
 '''
-Exercícios de Python Estrutura de Repetição
-Exercício 9
+Exercícios de Python -> Estrutura de Repetição
+
+Exercício 1
 ---
-Leia uma frase do usuário.
-Exiba essa frase de trás para frente.
-Exemplo: 'Curso de Python' --> 'nohtyP ed osruC
+Faça um script que mostre na tela uma contagem regressiva, de 10 até 0,
+com uma pausa de 1 segundo entre cada exibição.
+Dica: Para pausar você pode utilizar time.sleep().
 '''
+import time
 
-frase = str (input('Digite uma frase: '))
-
-for i in range(frase.__len__()-1,-1,-1):
-    print(frase[i], end='')
+for i in range(10,-1,-1):   # Contagem de 10 até 0
+    print(i)
+    time.sleep(1)           # Pausando 1 segundo
